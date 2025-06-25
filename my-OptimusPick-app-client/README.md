@@ -3,9 +3,10 @@
 Welcome to the **Product Recommendation System** – a fully responsive MERN-stack-based platform where users can post queries about products, receive alternative recommendations, and interact with other users' feedback.
 
 ## 🌐 Live Website
-[🔗 Visit Now](https://your-deployed-site-link.com)
+[🔗 Visit Now](https://optimuspick-d386a.web.app/)
 
 ---
+
 
 ## 📂 GitHub Repository  
 [📁 Client Side](https://github.com/yourusername/product-recommendation-client)  
