@@ -38,7 +38,7 @@ const ParticularInfo = ({ id }) => {
           <img
             src={querie.productImage}
             alt="Query Thumbnail"
-            className="w-full h-48 object-cover"
+            className="w-42  mx-auto object-cover"
           />
           <div className="p-5 space-y-3 text-gray-700">
             <h2 className="text-xl font-bold flex items-center gap-2 text-indigo-600">

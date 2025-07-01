@@ -3,7 +3,7 @@ import ReactAwesome from "./Sidebar";
 
 const Header = () => {
     return (
-        <div className="flex flex-col lg:flex-row gap-4">
+        <div className="flex flex-col lg:flex-row ">
             <div className="w-full lg:w-1/2">
                 <BannerSlider />
             </div>

@@ -54,7 +54,7 @@ const QueriesDetails = () => {
 
           {/* Product Image */}
           <div className="lg:w-1/2">
-            <img className="w-full " src={productImageUrl} alt={productName} />
+            <img className=" mx-auto lg:w-72 md:w-62 w-52  lg:mt-5 " src={productImageUrl} alt={productName} />
           </div>
 
           {/* Details */}

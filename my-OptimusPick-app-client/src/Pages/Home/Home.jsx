@@ -8,7 +8,7 @@ import { Zoom } from "react-awesome-reveal";
 const Home = () => {
     const recentlyAddQueries = useLoaderData();
     return (
-        <div className="mt-8">
+        <div className="mt-4">
             <Header></Header>
               <Zoom triggerOnce>
                 <h2 className="text-3xl font-bold text-center text-purple-700 mb-8">

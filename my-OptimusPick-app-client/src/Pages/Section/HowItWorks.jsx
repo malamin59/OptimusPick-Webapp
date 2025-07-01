@@ -10,7 +10,7 @@ import {
 
 const HowItWorks = () => {
   return (
-    <section className="bg-gradient-to-r from-blue-50 to-indigo-50 py-20 px-6">
+    <section className="bg-gradient-to-r from-blue-50 to-indigo-50 py-10 px-6">
       <div className="max-w-7xl mx-auto text-center">
         <Zoom triggerOnce>
           <h2 className="text-5xl font-extrabold mb-4 text-indigo-700 drop-shadow-lg">

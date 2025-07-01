@@ -17,7 +17,7 @@ const popUp = keyframes`
 
 const FirstSection = () => {
   return (
-    <section className="bg-gradient-to-br from-indigo-100 via-purple-50 to-pink-100 py-24 px-6 text-center overflow-hidden">
+    <section className="bg-gradient-to-br from-indigo-100 via-purple-50 to-pink-100  py-10 px-6 text-center overflow-hidden">
 
       {/*  Animated & Beautiful Header Section */}
       <Slide direction="up" triggerOnce>
@@ -27,14 +27,14 @@ const FirstSection = () => {
           <Fade cascade direction="up" triggerOnce>
             <div className="max-w-6xl mx-auto text-center">
               <Zoom triggerOnce delay={100}>
-                <h2 className="lg:text-5xl md:text-4xl text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 mb-4 tracking-wide leading-snug inline-flex items-center justify-center gap-2">
-                  <MdStars className="text-4xl  animate-spin-slow" />
+                <h2 className="lg:text-5xl md:text-4xl text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500  tracking-wide leading-snug inline-flex items-center justify-center gap-2">
+                  <MdStars className="text-4xl animate-spin-slow" />
                   Why People Boycott Products?
                 </h2>
               </Zoom>
 
               <Fade delay={300} triggerOnce>
-                <p className="text-lg text-gray-700 mb-6 max-w-3xl mx-auto leading-relaxed animate-fade-in">
+                <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed animate-fade-in">
                   People boycott for many reasons — <strong>low quality</strong>, <strong>unethical practices</strong>,
                   or <strong>poor service</strong>. This platform lets them raise their voice and guide others to better choices.
                 </p>
@@ -45,7 +45,7 @@ const FirstSection = () => {
       </Slide>
 
       {/*  Cards */}
-      <div className="grid md:grid-cols-3 gap-10 mt-20 max-w-6xl mx-auto">
+      <div className="grid md:grid-cols-3 gap-10 mt-10 max-w-6xl mx-auto">
         <Zoom triggerOnce keyframes={popUp} duration={800} delay={100}>
           <div className="p-6 bg-white rounded-3xl shadow-2xl hover:shadow-indigo-300 transition-all duration-500 border-t-4 border-indigo-500">
             <div className="text-4xl text-indigo-500 mb-4 animate-bounce">
@@ -85,7 +85,7 @@ const FirstSection = () => {
 
       {/*  Button */}
       <Slide direction="up" triggerOnce delay={700}>
-        <div className="mt-16">
+        <div className="mt-12">
           <button className="inline-flex items-center gap-3 bg-indigo-600 text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-300 text-lg animate-pulse">
             <MdOutlineReportProblem className="text-2xl" />
             Share Your Experience
