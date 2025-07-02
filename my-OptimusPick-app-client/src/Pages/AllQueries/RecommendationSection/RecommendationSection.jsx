@@ -135,7 +135,7 @@ const RecommendationSection = ({
           <div className="text-center">
             <button
               type="submit"
-              className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition-all duration-200"
+              className="inline-flex items-center gap-2 btn btn-primary text-white font-semibold px-6 py-3 rounded-lg shadow-md transition-all duration-200"
             >
               <IoMdSend className="text-xl" />
               Add Recommendation

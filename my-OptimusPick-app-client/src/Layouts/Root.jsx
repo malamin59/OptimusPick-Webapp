@@ -14,88 +14,113 @@ import QueriesDetails from "../Pages/AllQueries/QueriesDetails";
 import Loading from "../Pages/Loading/loading";
 import UpdateMyQueries from "../Pages/MyQueries/UpdateMyQueries";
 import ParticularInfo from "../Pages/AllQueries/RecommendationSection/ParticularInfo/ParticularInfo";
+import Experience from "../Pages/Experience/experience";
 
 const router = createBrowserRouter([
-    {
-        path: '/',
-        Component: LayOut,
-        errorElement: <Error></Error>,
-        children: [
-            {
-                path: '/',
-                Component: Home,
-                loader: () => fetch(`${import.meta.env.VITE_API_URL}/allQueries`),
-            },
-            {
-                path: 'Queries',
-                Component: Queries,
-                hydrateFallbackElement: <Loading></Loading>
-            },
-            {
-                path: 'register',
-                Component: Register
-            },
-            {
-                path: 'login',
-                Component: LogIn
-            },
-            {
-                path: 'recommendationsForMe',
-                element: <PrivateRote>
-                    <RecommendationsForMe></RecommendationsForMe>
-                </PrivateRote>
-            },
-            {
-                path: 'myQueries',
-                hydrateFallbackElement: <Loading></Loading>,
-                element: <PrivateRote>
-                    <MyQueries />
-                </PrivateRote>
-
-            },
-            {
-                path: '/updateMyQueries/:id',
-                loader: ({ params }) => fetch(`${import.meta.env.VITE_API_URL}/getAllQueries/${params.id}`),
-                hydrateFallbackElement: <Loading></Loading>,
-                element: <PrivateRote>
-                    <UpdateMyQueries />
-                </PrivateRote>
-            },
-            {
-                path: 'queriesDetails/:id',
-                hydrateFallbackElement: <Loading></Loading>,
-                loader: ({ params }) => fetch(`${import.meta.env.VITE_API_URL}/getAllQueries/${params.id}`),
-                element: <PrivateRote>
-                    <QueriesDetails></QueriesDetails>
-                </PrivateRote>
-            },
-            {
-                path: 'myRecommendations',
-                hydrateFallbackElement: <Loading></Loading>,
-                element: <PrivateRote>
-                    <MyRecommendations />
-                </PrivateRote>
-
-            },
-            {
-                path: '/particular/:id',
-                loaderL: ({ params }) => fetch(`${import.meta.env.VITE_API_URL}/particular/${params.id}`),
-                element: <PrivateRote>
-                    <ParticularInfo>
-                    </ParticularInfo>
-                </PrivateRote>
-            },
-            {
-
-            },
-            {
-                path: 'addQueries',
-                element: <PrivateRote>
-                    <AddQueries />
-                </PrivateRote>
-            }
-
-        ]
-    }
+  {
+    path: "/",
+    Component: LayOut,
+    errorElement: <Error></Error>,
+    children: [
+      {
+        path: "/",
+        Component: Home,
+        loader: () => fetch(`${import.meta.env.VITE_API_URL}/allQueries`),
+        hydrateFallbackElement: (
+          <div className="min-h-screen flex justify-center items-center">
+            <span className="loading loading-spinner loading-md"></span>;
+          </div>
+        ),
+      },
+      {
+        path: "Queries",
+        Component: Queries,
+        hydrateFallbackElement: <Loading></Loading>,
+      },
+      {
+        path: "register",
+        Component: Register,
+      },
+      {
+        path: "login",
+        Component: LogIn,
+      },
+      {
+        path: "recommendationsForMe",
+        element: (
+          <PrivateRote>
+            <RecommendationsForMe></RecommendationsForMe>
+          </PrivateRote>
+        ),
+      },
+      {
+        path: "myQueries",
+        hydrateFallbackElement: <Loading></Loading>,
+        element: (
+          <PrivateRote>
+            <MyQueries />
+          </PrivateRote>
+        ),
+      },
+      {
+        path: "/updateMyQueries/:id",
+        loader: ({ params }) =>
+          fetch(`${import.meta.env.VITE_API_URL}/getAllQueries/${params.id}`),
+        hydrateFallbackElement: <Loading></Loading>,
+        element: (
+          <PrivateRote>
+            <UpdateMyQueries />
+          </PrivateRote>
+        ),
+      },
+      {
+        path: "queriesDetails/:id",
+        hydrateFallbackElement: <Loading></Loading>,
+        loader: ({ params }) =>
+          fetch(`${import.meta.env.VITE_API_URL}/getAllQueries/${params.id}`),
+        element: (
+          <PrivateRote>
+            <QueriesDetails></QueriesDetails>
+          </PrivateRote>
+        ),
+      },
+      {
+        path: "myRecommendations",
+        hydrateFallbackElement: <Loading></Loading>,
+        element: (
+          <PrivateRote>
+            <MyRecommendations />
+          </PrivateRote>
+        ),
+      },
+      {
+        path: "/particular/:id",
+        loaderL: ({ params }) =>
+          fetch(`${import.meta.env.VITE_API_URL}/particular/${params.id}`),
+        element: (
+          <PrivateRote>
+            <ParticularInfo></ParticularInfo>
+          </PrivateRote>
+        ),
+      },
+      {},
+      {
+        path: "addQueries",
+        element: (
+          <PrivateRote>
+            <AddQueries />
+          </PrivateRote>
+        ),
+      },
+      {
+        path: "experience",
+        element: (
+          <PrivateRote>
+            <Experience />
+          </PrivateRote>
+        ),
+      },
+    ],
+  },
 ]);
-export default router
+export default router;
