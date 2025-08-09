@@ -69,7 +69,7 @@ const Experience = () => {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="max-w-3xl mx-auto px-4 py-6"
     >
-      <h2 className="text-3xl font-bold text-center ">Share Your Experience</h2>
+      <h2 className="text-3xl font-bold text-center  italic ">Share Your Experience</h2>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="space-y-5 bg-white p-6 rounded-xl shadow"
