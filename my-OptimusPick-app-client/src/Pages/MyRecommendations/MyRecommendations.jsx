@@ -28,7 +28,7 @@ const MyRecommendations = () => {
       text: "You won't be able to revert this!",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonColor: "#3085d6",
+      confirmButtonColor: "#3149A3",
       cancelButtonColor: "#d33",
       confirmButtonText: "Yes, delete it!"
     }).then((result) => {
@@ -54,7 +54,7 @@ const MyRecommendations = () => {
   }
   return (
     <div className="p-6">
-      <h2 className="text-2xl  font-bold flex justify-center items-center gap-2 text-indigo-600 mb-6">
+      <h2 className="text-2xl italic  font-bold flex justify-center items-center gap-2 text-indigo-600 mb-6">
 
         My Recommendations
       </h2>
