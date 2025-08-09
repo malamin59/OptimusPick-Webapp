@@ -42,7 +42,7 @@ const MyQueriesBanner = () => {
         {/* Slide 2 */}
         <div className="h-[200px] sm:h-[300px] md:h-[350px] overflow-hidden rounded-lg relative">
           <img
-            src={image2}
+            src={image}
             alt="Banner"
             className="w-full h-full object-cover brightness-75 absolute"
           />
@@ -59,7 +59,7 @@ const MyQueriesBanner = () => {
         {/* Slide 3 */}
         <div className="h-[200px] sm:h-[300px] md:h-[350px] overflow-hidden rounded-lg relative">
           <img
-            src={image}
+            src={image2}
             alt="Banner"
             className="w-full h-full object-cover brightness-75 absolute"
           />
