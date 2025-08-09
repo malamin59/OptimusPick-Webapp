@@ -131,12 +131,12 @@ const Queries = () => {
 
       {/* Header with Icon */}
       <div className="text-center my-10">
-        <h2 className="text-4xl md:text-5xl font-extrabold italic text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-500 to-red-500 drop-shadow-md inline-flex items-center gap-3 justify-center">
+        <h2 className="text-4xl md:text-4xl  font-extrabold italic text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-500 to-red-500 drop-shadow-md inline-flex items-center gap-3 justify-center">
           <FaQuestionCircle className="text-pink-500 animate-bounce" />
           All Queries Are Here
           <RiChatSmile3Line className="text-indigo-500 animate-pulse" />
         </h2>
-        <p className="text-gray-600 mt-2 text-sm md:text-base flex justify-center items-center gap-1">
+        <p className="text-gray-600 mt-2 italic text-sm md:text-base flex justify-center items-center gap-1">
           <MdOutlineQueryStats className="text-blue-500" />
           Stay informed with the latest product questions
         </p>
