@@ -55,7 +55,7 @@ const AddQueries = () => {
         onSubmit={handleAddQueries}
         className="w-full max-w-xl bg-white p-8 rounded-2xl shadow-xl space-y-6 transition-all duration-300 hover:shadow-2xl"
       >
-        <h2 className="text-2xl font-bold text-center text-indigo-700">
+        <h2 className="text-2xl font-bold text-center italic text-indigo-700">
           Add a Product Query
         </h2>
         <div className="space-y-1">
