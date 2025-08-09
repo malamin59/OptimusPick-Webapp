@@ -5,6 +5,7 @@ import { Link } from "react-router";
 
 const ExperienceList = () => {
   const { data: experiences = [], isLoading, isError } = GetExperience();
+  // console.log(experiences)
   const listRef = useRef(null);
   const [offsetY, setOffsetY] = useState(0);
 
@@ -27,9 +28,9 @@ const ExperienceList = () => {
     return () => clearInterval(interval);
   }, []);
 
-  if (isLoading) return <p>লোড হচ্ছে...</p>;
+  if (isLoading) return <p>loading...</p>;
   if (isError || experiences.length === 0)
-    return <p>কোনও কমেন্ট পাওয়া যায়নি!</p>;
+    return <p className="my-10 text-2xl text-center">No Comment Fount!</p>;
 
   const formatDateToBD = (isoString) => {
     return new Date(isoString).toLocaleString("en-BD", {
@@ -64,7 +65,7 @@ const ExperienceList = () => {
           >
             {exp.imageUrl && (
               <img
-                src={exp.imageUrl}
+                src={exp?.imageUrl}
                 alt="user"
                 className="w-10 h-10 rounded-full object-cover border"
               />

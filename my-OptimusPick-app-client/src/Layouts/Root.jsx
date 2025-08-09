@@ -107,9 +107,9 @@ const router = createBrowserRouter([
       {
         path: "addQueries",
         element: (
-          <PrivateRote>
+         
             <AddQueries />
-          </PrivateRote>
+       
         ),
       },
       {

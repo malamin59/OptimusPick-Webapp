@@ -2,6 +2,7 @@ import axios from "axios";
 import UseAuth from "../../Hooks/UseAuth";
 import Swal from "sweetalert2";
 import { FaBoxOpen, FaTags, FaImage, FaQuestionCircle, FaBan, FaPaperPlane } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 
 const AddQueries = () => {
@@ -21,7 +22,7 @@ const AddQueries = () => {
         queriesData.date = new Date().toLocaleDateString();
         queriesData.time = new Date().toLocaleTimeString();
         queriesData.recommendationCount = parseInt(0)
-
+if(!user) return toast.error("Please login to added Queries")
 
         axios.post(`${import.meta.env.VITE_API_URL}/allQueries`, queriesData)
             .then(res => {

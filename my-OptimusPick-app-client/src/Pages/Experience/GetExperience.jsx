@@ -7,7 +7,7 @@ const GetExperience = () => {
   return useQuery({
     queryKey: ["experience"],
     queryFn: async () => {
-        const res = await axiosSecure.get("/userExperience"); // your backend will sort it
+        const res = await axiosSecure.get("/userExperience");  
         return res.data;
        
     },

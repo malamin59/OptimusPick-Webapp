@@ -7,7 +7,7 @@ const quizQuestions = [
     options: ["Under $50", "$50 - $150", "$150+"],
   },
   {
-    question: "What’s your top priority?",
+    question: "Wha's your top priority?",
     options: ["Battery Life", "Design", "Performance"],
   },
   {

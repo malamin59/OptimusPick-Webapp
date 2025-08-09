@@ -23,11 +23,11 @@ const QueriesCard = ({ querie }) => {
             <span className="font-semibold"></span> {productName}
           </p>
           <div className="flex flex-col gap-3 mb-2">
-            <span className="inline-flex w-auto items-center gap-1 bg-indigo-600 text-white text-xs font-semibold px-3 py-1 rounded-full drop-shadow-md">
+            <span className="inline-flex items-center w-fit gap-1 bg-indigo-600 text-white text-xs font-semibold px-3 py-1 rounded-full drop-shadow-md">
             <FaBoxOpen className="text-white" />
             {productBrand}
           </span>
-          <span className="inline-flex w-38 items-center gap-1 bg-green-500 text-white text-xs font-semibold px-3 py-1 rounded-full drop-shadow-md">
+          <span className="inline-flex w-fit items-center gap-1 bg-green-500 text-white text-xs font-semibold px-3 py-1 rounded-full drop-shadow-md">
             <FaHeart className="text-white" />
             {recommendationCount} Recommendations
           </span>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion"; // <-- Import করলাম
-import useAxiosSecure from "../../Hooks/useAxiosSecure";
+import { motion } from "framer-motion"; 
+// import useAxiosSecure from "../../Hooks/useAxiosSecure";
 import UseAuth from "../../Hooks/UseAuth";
 import { useForm } from "react-hook-form";
 import axios from "axios";
@@ -8,7 +8,7 @@ import Swal from "sweetalert2";
 
 const Experience = () => {
   const { register, handleSubmit, reset } = useForm();
-  const useAxios = useAxiosSecure();
+  // const useAxios = useAxiosSecure();
   const { user } = UseAuth();
   const [imageUrl, setImageUrl] = useState("");
 
@@ -30,11 +30,11 @@ const Experience = () => {
       console.log(error);
     }
   };
-
+  
   const onSubmit = async (data) => {
     const email = user?.email;
     const name = user?.displayName;
-
+    
     const formData = {
       ...data,
       email,
@@ -46,6 +46,7 @@ const Experience = () => {
         `${import.meta.env.VITE_API_URL}/experience`,
         formData
       );
+      // console.log(formData)
       if (res.data.insertedId) {
         Swal.fire({
           position: "top-end",
