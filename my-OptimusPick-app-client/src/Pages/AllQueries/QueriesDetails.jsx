@@ -59,18 +59,18 @@ const QueriesDetails = () => {
 
           {/* Details */}
           <div className="p-6 space-y-3">
-            <h2 className="text-2xl font-bold text-gray-800">{queryTitle}</h2>
+            <h2 className="text-2xl font-bold text-gray-800 italic">{queryTitle}</h2>
 
-            <p><span className="font-semibold">Product Name:</span> {productName}</p>
-            <p className="flex items-center gap-2"><FaStoreAlt /> <span>Brand: {productBrand}</span></p>
-            <p className="flex items-center gap-2"><FaClock /> <span>Time: {time}</span></p>
-            <p className="flex items-center gap-2"><FaCalendarAlt /> <span>Date: {date}</span></p>
-            <p><span className="font-semibold">Boycott Reason:</span> {boycottReason}</p>
-            <p className="flex items-center gap-2"><FaThumbsUp /> <span>Recommend: {recommends}</span></p>
-            <p className="flex items-center gap-2"><FaUser /> <span>{userName}</span></p>
-            <p className="flex items-center gap-2"><FaEnvelope /> <span>{userEmil}</span></p>
+            <p><span className="font-semibold italic" >Product Name:</span> {productName}</p>
+            <p className="flex items-center italic gap-2"><FaStoreAlt /> <span>Brand: {productBrand}</span></p>
+            <p className="flex items-center italic gap-2"><FaClock /> <span>Time: {time}</span></p>
+            <p className="flex items-center italic gap-2"><FaCalendarAlt /> <span>Date: {date}</span></p>
+        <p><span className="font-semibold   italic ">Boycott Reason:</span> {boycottReason}</p>
+            <p className="flex items-center italic gap-2"><FaThumbsUp /> <span>Recommend: {recommends}</span></p>
+            <p className="flex items-center italic gap-2"><FaUser /> <span>{userName}</span></p>
+            <p className="flex items-center italic gap-2"><FaEnvelope /> <span>{userEmil}</span></p>
 
-            <div className="flex items-center gap-2">
+            <div className="flex items-center italic gap-2">
               <span className="font-semibold">User Photo:</span>
               <img className="w-10 h-10 rounded-full border" src={userPhoto} alt={userName} />
             </div>
