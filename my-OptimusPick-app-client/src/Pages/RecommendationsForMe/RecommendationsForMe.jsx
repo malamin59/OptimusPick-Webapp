@@ -21,14 +21,14 @@ const RecommendationsForMe = () => {
   }, []);
 
   return (
-    <div className="max-w-7xl mx-auto pb-18">
+    <div className="max-w-7xl mx-auto italic pb-18">
       <motion.h2
         className="text-3xl font-bold text-center mt-6 text-indigo-600 mb-8 flex items-center justify-center gap-1"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <TbDeviceMobile className="text-4xl" /> Recommendations for Me
+        <TbDeviceMobile className="text-4xl " /> Recommendations for Me
       </motion.h2>
 
       {myQueries.length === 0 ? (
